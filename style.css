@@ -89,3 +89,63 @@ pre::after{
     linear-gradient(-45deg, red, blue);
     transform: translateZ(-50px);
 }
+
+pre {
+  --rotateX: 0;
+  --rotateY: 0;
+  transition: transform 0.3s ease-out;
+}
+
+pre:hover {
+  --rotateX: 0;
+  --rotateY: 0;
+}
+
+pre:hover::before {
+  content: "";
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1px;
+  height: 1px;
+  background: transparent;
+}
+
+pre:hover::after {
+  content: "";
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+pre:hover::before,
+pre:hover::after {
+  animation: pulse 1.2s ease-out infinite;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.8);
+    opacity: 1;
+  }
+  to {
+    transform: scale(2.4);
+    opacity: 0;
+  }
+}
+
+pre:hover {
+  --rotateX: 0;
+  --rotateY: 0;
+}
+
+pre {
+  transform-style: preserve-3d;
+  transform: rotateX(var(--rotateX)) rotateY(var(--rotateY));
+}
