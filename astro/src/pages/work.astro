@@ -1,4 +1,5 @@
 ---
+import Header from "../components/Header.astro";
 ---
 
 <html lang="en">
@@ -10,28 +11,20 @@
 		<title>Samuel Francis | Work</title>
 	</head>
 	<body>
-		<nav>
-			<ul>
-				<li><a href="/index"><img src="/astro/src/assets/logo.svg" alt=""></a></li>
-				<li><a href="/about">about</a></li>
-				<li><a href="/work">work</a></li>
-				<li><a href="/resume">resume</a></li>
-				<li><a href="/contact">contact</a></li>
-			</ul>
-		</nav>
+		<Header />
 		<h1>Welcome to my work page</h1>
     <p>Here you can find some of my work</p>
 		<ul>
 			<li>
-				<a href="/astro/src/pages/posts/post-1.md">
+				<a href="/posts/post-1.md">
 					<h2>Post 1</h2>
 					<p>Post 1 description</p>
 				</a>
-				<a href="/astro/src/pages/posts/post-2.md">
+				<a href="/posts/post-2.md">
 					<h2>Post 2</h2>
 					<p>Post 2 description</p>
 				</a>
-				<a href="/astro/src/pages/posts/post-3.md">
+				<a href="/posts/post-3.md">
 					<h2>Post 3</h2>
 					<p>Post 3 description</p>
 				</a>
