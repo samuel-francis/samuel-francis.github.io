@@ -1,0 +1,28 @@
+---
+const platform = "github";
+const username = "sicnarfleumas";
+---
+
+<footer>
+  <p>Learn more about my projects on <a href={`https://www.${platform}.com/${username}`}>{platform}</a>!</p>
+</footer>
+
+<style>
+  footer {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid #eaecef;
+  }
+  footer p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  footer img {
+    margin-left: 0.5rem;
+  }
+  footer a {
+    display: flex;
+    align-items: center;
+  }
+</style>
