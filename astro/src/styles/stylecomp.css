@@ -1,0 +1,16 @@
+/* Navigation Styling */
+.navlinks
+
+nav {
+  background: #1E1E1E;
+  display: flex;
+  height: 3rem;
+  justify-content: right;
+  padding-right: 5rem;
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: center;
+}
+

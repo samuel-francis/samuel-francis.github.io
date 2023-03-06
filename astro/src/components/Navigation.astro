@@ -1,52 +1,10 @@
 ---
-import '../styles/global.css';
+import '../styles/stylecomp.css'
 ---
-<nav>
-  <div class="logo">
-    <a href="/">
-      <img src="/astro/public/logo.svg" alt="samuefrancis.me website logo">
-      </a>
-
+<div class="nav-links">
+    <a href="../pages/index.astro">Home</a>
+    <a href="../pages/about.astro">About</a>
+    <a href="../pages/work.astro">Work</a>
+    <a href="../pages/resume.astro">Resume</a>
+    <a href="../pages/contact.astro">Contact</a>
   </div>
-  <ul class="nav-links">
-    <li><a href="#">Home</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Services</a></li>
-    <li><a href="#">Contact</a></li>
-  </ul>
-</nav>
-
-<style>
-  /* Navigation styles */
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #333;
-  color: #fff;
-  height: 60px;
-  padding: 0 20px;
-}
-
-.logo img {
-  width: 60px;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  align-items: center;
-}
-
-.nav-links li {
-  margin-right: 20px;
-}
-
-.nav-links a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-</style>
