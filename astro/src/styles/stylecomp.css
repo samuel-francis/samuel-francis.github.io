@@ -1,5 +1,6 @@
 /* Navigation Styling */
-.navlinks
+
+
 
 nav {
   background: #1E1E1E;
@@ -7,10 +8,28 @@ nav {
   height: 3rem;
   justify-content: right;
   padding-right: 5rem;
+  align-items: center;
+}
+
+nav #right {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.navlinks {
+  display: flex;
+  justify-content: right;
 }
 
 nav ul {
   list-style-type: none;
+  display: flex;
   text-align: center;
+
 }
 
+a {
+  color: #E8D5C4; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+  padding: 0 .5rem;
+}
