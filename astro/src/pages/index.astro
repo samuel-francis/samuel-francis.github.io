@@ -1,0 +1,72 @@
+---
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+	</head>
+	<body>
+		<div id="container">
+		<div id="hero-main">
+			<div id="hero-left">
+				<h1>Hello, I like to <br>
+					Develop 
+					<br>
+					For The Web!</h1>
+				<div id="herosocial">LinkedIn, GitHub</div>
+			</div>
+			<div id="hero-right">
+				<p>image</p>
+			</div>
+		</div>
+		<div id="certs">
+			<p>Certified</p>
+			<p>|</p>
+			<p>Google</p>
+			<p>Meta</p>
+			<p>Coursera</p>
+		</div>
+	</div>
+	</body>
+</html>
+
+<style>
+	#container {
+		display: block;
+	}
+	#hero-main {
+		display: flex;
+		flex-direction: row;
+		align-content: center;
+		justify-content: center;
+		padding-top: 12.5rem;
+	}
+	#hero-left {
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+		justify-content: center;
+	}
+	#hero-right {
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+		justify-content: center;
+		padding-left: 5rem;
+	}
+	h1 {
+		font-family: 'Inter';
+		line-height: 2.5rem;
+	}
+#certs{
+	display: flex;
+	flex-direction: row;
+	gap: 5rem;
+	justify-content: center;
+	margin-top: 5rem;
+}
+</style>
