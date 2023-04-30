@@ -1,10 +1,12 @@
 ---
+import '@fontsource/inter';
+
 import google from '../assets/logos/google.jpg'
-// import facebook from '../assets/logos/facebook.jpg'
+import facebook from '../assets/logos/facebook.jpg'
 import coursera from '../assets/logos/coursera.jpg'
 
-// import linkedin from '../assets/logos/linkedin.jpg'
-// import github from '../assets/logos/github.jpg'
+import linkedin from '../assets/logos/linkedin.jpg'
+import github from '../assets/logos/github.jpg'
 ---
 
 <html lang="en">
@@ -13,22 +15,22 @@ import coursera from '../assets/logos/coursera.jpg'
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Samuel Francis | Portfolio</title>
 	</head>
 	<body>
 		<div id="container">
 		<div id="hero-main">
 			<div id="hero-left">
 				<h1>Hello, I like to <br>
-					<span class="typer" id="main" data-words="Develop,Strategize,Design,Ideate" data-delay="100" data-deleteDelay="1000" data-colors="#7F93FF"></span>
-					<span class="cursor" data-owner="main"></span>
+					<span class="typer" id="main" data-words="Develop,Strategize,Design,Ideate" data-delay="100" data-deleteDelay="1000" data-colors="#7F93FF,#9ACD32,#BA55D3,#FFA07A"></span>
 					<script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
-
+					
+					<span class="cursor" data-owner="main" data-cursor-display="_"  ></span>
 					<br>
 					For The Web!</h1>
 				<div id="herosocial">
-					<!-- <img src={linkedin} sizes="40" alt="LinkedIn Logo">
-					<img src={github} alt="Github Logo"> -->
+					<img src={github} height="30px" width="30px" alt="Github Logo">
+					<img src={linkedin} height="30px" width="30px" alt="LinkedIn Logo">
 				</div>
 			</div>
 			<div id="hero-right">
@@ -38,15 +40,26 @@ import coursera from '../assets/logos/coursera.jpg'
 		<div id="certs">
 			<p>CERTIFIED BY</p>
 			<p>|</p>
-			<img src={google} width="40"	height="40" alt="Google Logo" >
-			<!-- <img src={facebook} width="40"	height="40" alt="Meta Logo" > -->
 			<img src={coursera} width="40"	height="40" alt="coursera logo" >
+			<img src={google} width="40"	height="40" alt="Google Logo" >
+			<img src={facebook} width="40"	height="40" alt="Meta Logo" >
 		</div>
 	</div>
 	</body>
 </html>
 
 <style>
+
+	@font-face{
+		font-family: Inter;
+		src: url(Inter-Regular.ttf);
+	}
+
+body{
+	font-family: "Inter", sans-serif;
+	font-weight: bolder;
+}
+
 	#container {
 		display: block;
 	}
@@ -71,7 +84,6 @@ import coursera from '../assets/logos/coursera.jpg'
 		padding-left: 5rem;
 	}
 	h1 {
-		font-family: 'Inter';
 		line-height: 2.5rem;
 	}
 #certs{
@@ -80,14 +92,17 @@ import coursera from '../assets/logos/coursera.jpg'
 	gap: 5rem;
 	justify-content: center;
 	margin-top: 5rem;
-/* 
+	padding-left: 5%;
+	padding-right: 5%;
+
+	align-items: center;
+
 	font-weight: bold;
-	font-size: 1.5rem;
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
-	
-	justify-content: top: ; */
+	color: black;
+	font-size: 25px;
 }
-.cursor{	
-	color: #7F93FF;
+
+.cursor{
+	color: transparent ;
 }
 </style>
