@@ -29,8 +29,8 @@ import github from '../assets/logos/github.jpg'
 					<br>
 					For The Web!</h1>
 				<div id="herosocial">
-					<img src={github} height="30px" width="30px" alt="Github Logo">
-					<img src={linkedin} height="30px" width="30px" alt="LinkedIn Logo">
+					<img class="work" src={github} alt="Github Logo">
+					<img class="work" src={linkedin} alt="LinkedIn Logo">
 				</div>
 			</div>
 			<div id="hero-right">
@@ -40,9 +40,9 @@ import github from '../assets/logos/github.jpg'
 		<div id="certs">
 			<p>CERTIFIED BY</p>
 			<p>|</p>
-			<img src={coursera} width="40"	height="40" alt="coursera logo" >
-			<img src={google} width="40"	height="40" alt="Google Logo" >
-			<img src={facebook} width="40"	height="40" alt="Meta Logo" >
+			<img src={coursera} alt="coursera logo" >
+			<img src={google} alt="Google Logo" >
+			<img src={facebook} alt="Meta Logo" >
 		</div>
 	</div>
 	</body>
@@ -50,16 +50,20 @@ import github from '../assets/logos/github.jpg'
 
 <style>
 
-	@font-face{
-		font-family: Inter;
-		src: url(Inter-Regular.ttf);
-	}
-
 body{
 	font-family: "Inter", sans-serif;
-	font-weight: bolder;
+	font-weight: 900;
 }
 
+.work{
+width: 2rem;
+height: 2rem;
+}
+
+img{
+	width: 2rem;
+	height: 2rem;
+}
 	#container {
 		display: block;
 	}
@@ -99,7 +103,7 @@ body{
 
 	font-weight: bold;
 	color: black;
-	font-size: 25px;
+	font-size: 1rem;
 }
 
 .cursor{
