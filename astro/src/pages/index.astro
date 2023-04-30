@@ -1,4 +1,10 @@
 ---
+import google from '../assets/logos/google.jpg'
+// import facebook from '../assets/logos/facebook.jpg'
+import coursera from '../assets/logos/coursera.jpg'
+
+// import linkedin from '../assets/logos/linkedin.jpg'
+// import github from '../assets/logos/github.jpg'
 ---
 
 <html lang="en">
@@ -14,21 +20,27 @@
 		<div id="hero-main">
 			<div id="hero-left">
 				<h1>Hello, I like to <br>
-					Develop 
+					<span class="typer" id="main" data-words="Develop,Strategize,Design,Ideate" data-delay="100" data-deleteDelay="1000"></span>
+					<span class="cursor" data-owner="main"></span>
+					<script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
+
 					<br>
 					For The Web!</h1>
-				<div id="herosocial">LinkedIn, GitHub</div>
+				<div id="herosocial">
+					<!-- <img src={linkedin} sizes="40" alt="LinkedIn Logo">
+					<img src={github} alt="Github Logo"> -->
+				</div>
 			</div>
 			<div id="hero-right">
 				<p>image</p>
 			</div>
 		</div>
 		<div id="certs">
-			<p>Certified</p>
+			<p>CERTIFIED BY</p>
 			<p>|</p>
-			<p>Google</p>
-			<p>Meta</p>
-			<p>Coursera</p>
+			<img src={google} width="40"	height="40" alt="Google Logo" >
+			<!-- <img src={facebook} width="40"	height="40" alt="Meta Logo" > -->
+			<img src={coursera} width="40"	height="40" alt="coursera logo" >
 		</div>
 	</div>
 	</body>
@@ -68,5 +80,18 @@
 	gap: 5rem;
 	justify-content: center;
 	margin-top: 5rem;
+/* 
+	font-weight: bold;
+	font-size: 1.5rem;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	
+	justify-content: top: ; */
+}
+
+#main{
+	color: #7F93FF;
+}
+.cursor{	
+	color: #7F93FF;
 }
 </style>
