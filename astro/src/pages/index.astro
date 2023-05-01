@@ -22,15 +22,24 @@ import github from '../assets/logos/github.jpg'
 		<div id="hero-main">
 			<div id="hero-left">
 				<h1>Hello, I like to <br>
-					<span class="typer" id="main" data-words="Develop,Strategize,Design,Ideate" data-delay="100" data-deleteDelay="1000" data-colors="#7F93FF,#9ACD32,#BA55D3,#FFA07A"></span>
-					<script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
+					
+					<div id="herotext">
+					
+						<span class="typer" id="main" data-words="Develop,Strategize,Design,Ideate" data-delay="100" data-deleteDelay="1000" data-colors="#7F93FF,#9ACD32,#BA55D3, #FF6347"></span>
 					
 					<span class="cursor" data-owner="main" data-cursor-display="_"  ></span>
-					<br>
+
+					<script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
+				
+					</div>
 					For The Web!</h1>
 				<div id="herosocial">
-					<img class="work" src={github} alt="Github Logo">
-					<img class="work" src={linkedin} alt="LinkedIn Logo">
+					<a href="https://github.com/sicnarfleumas" target="blank">
+						<img class="work" src={github} alt="Github Logo">
+					</a>
+					<a href="https://www.linkedin.com/in/sicnarfleumas/" target="blank">
+						<img class="work" src={linkedin} alt="LinkedIn Logo">
+					</a>
 				</div>
 			</div>
 			<div id="hero-right">
@@ -38,7 +47,7 @@ import github from '../assets/logos/github.jpg'
 			</div>
 		</div>
 		<div id="certs">
-			<p>CERTIFIED BY</p>
+			<p>CERTIFIED</p>
 			<p>|</p>
 			<img src={coursera} alt="coursera logo" >
 			<img src={google} alt="Google Logo" >
@@ -56,8 +65,8 @@ body{
 }
 
 .work{
-width: 2rem;
-height: 2rem;
+width: 1.5rem;
+height: 1.5rem;
 }
 
 img{
@@ -89,6 +98,7 @@ img{
 	}
 	h1 {
 		line-height: 2.5rem;
+		font-weight: 900;
 	}
 #certs{
 	display: flex;
@@ -105,8 +115,8 @@ img{
 	color: black;
 	font-size: 1rem;
 }
-
-.cursor{
-	color: transparent ;
+.cursor {
+  color: transparent;
 }
+
 </style>
