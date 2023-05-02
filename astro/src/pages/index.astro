@@ -1,23 +1,26 @@
 ---
 import '@fontsource/inter';
+import Navigation from '../components/nav.astro'
 
 import google from '../assets/logos/google.jpg'
 import facebook from '../assets/logos/facebook.jpg'
 import coursera from '../assets/logos/coursera.jpg'
-
 import linkedin from '../assets/logos/linkedin.jpg'
 import github from '../assets/logos/github.jpg'
+
+import hero from '../assets/hero.png'
 ---
 
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.png" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Samuel Francis | Portfolio</title>
 	</head>
 	<body>
+		<Navigation />
 		<div id="container">
 		<div id="hero-main">
 			<div id="hero-left">
@@ -42,15 +45,15 @@ import github from '../assets/logos/github.jpg'
 				</div>
 			</div>
 			<div id="hero-right">
-				<p>image</p>
+				<img class="hero-img" src={hero} alt="Image of a person wearing a shirt" width="220" height="220">
 			</div>
 		</div>
 		<div id="certs">
 			<p>CERTIFIED</p>
 			<p>|</p>
-			<img src={coursera} alt="coursera logo" >
-			<img src={google} alt="Google Logo" >
-			<img src={facebook} alt="Meta Logo" >
+			<img src={coursera} alt="coursera logo" width="30rem" height="30rem">
+			<img src={google} alt="Google Logo" width="30rem" height="30rem">
+			<img src={facebook} alt="Meta Logo" width="30rem" height="30rem">
 		</div>
 	</div>
 	</body>
@@ -62,13 +65,12 @@ body{
 	font-family: "Inter", sans-serif;
 	font-weight: 900;
 }
-
 .work{
 width: 1.5rem;
 height: 1.5rem;
 }
 
-img{
+#_certs {
 	width: 2rem;
 	height: 2rem;
 }
@@ -91,8 +93,8 @@ img{
 	#hero-right {
 		display: flex;
 		flex-direction: column;
-		align-content: center;
-		justify-content: center;
+		/* align-content: center;
+		justify-content: center; */
 		padding-left: 5rem;
 	}
 	h1 {
