@@ -3,10 +3,10 @@
 ---
 
 <nav>
-  <div class="left">
+  <div class="top">
     <a class="spl" href="#">Samuel Francis</a>
   </div>
-  <div class="right">
+  <div class="bottom">
     <a href="#">Home</a>
     <a href="#">About</a>
     <a href="#">Contact</a>
@@ -16,25 +16,23 @@
 <style>
   nav {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
+    justify-content: center;
+    flex-direction: row;
+
+    padding-left:5rem;
+    padding-right:5rem;
+    padding-top:1rem;
+
+    height: 10vh;
   }
-  
+.top {
+  flex: 1;
+  } 
+
   .spl {
     color: #8094FF
   }
 
-  .left {
-    flex: 1;
-  }
-  
-  .right {
-    display: flex;
-    justify-content: flex-end;
-    flex: 1;
-  }
-  
   a {
     text-decoration: none;
     margin-left: 1rem;

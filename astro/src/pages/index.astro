@@ -10,114 +10,89 @@ import github from '../assets/logos/github.jpg'
 
 import hero from '../assets/hero.png'
 ---
-
 <html lang="en">
 	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.png" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
+		<meta charset="utf-8">
+		<link rel="icon" type="image/svg+xml" href="/favicon.png">
+		<meta name="viewport" content="width=device-width">
+		<meta name="generator" content={Astro.generator}>
 		<title>Samuel Francis | Portfolio</title>
 	</head>
-	<body>
-		<Navigation />
-		<div id="container">
-		<div id="hero-main">
-			<div id="hero-left">
-				<h1>&nbsp;&nbsp; Hello, I like to <br>
-					
-					<div id="herotext">
-					
-						<span class="typer" id="main" data-words="Develop,Strategize,Design,Ideate" data-delay="100" data-deleteDelay="1000" data-colors="#7F93FF,#9ACD32,#BA55D3, #FF6347"></span>
-					
-					<span class="cursor" data-owner="main" data-cursor-display="_"  ></span>
+  <body>
+<div id="hero">
+<div class="left">
+  <p>&nbsp;&nbsp;Hello, I like to</p>
+  <p>
+    <span class="typer" id="main" data-words="DEVELOP, STRATEGIZE, DESIGN, IDEATE" data-delay="100" data-deleteDelay="1000" data-colors="#7F93FF,#9ACD32,#BA55D3, #FF6347"></span>
+    <span class="cursor" data-owner="main" data-cursor-display="_"></span>
+    <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
+  </p>
+  <p>&nbsp;&nbsp;&nbsp; For The Web!</p>
+  <div class="socials">
+    &nbsp; &nbsp; &nbsp;&nbsp;
+    <a href="https://github.com/sicnarfleumas" target="_blank">
+      <img src={github} alt="Github Logo" height="30" width="auto"></a> 
+    <a href="https://www.linkedin.com/in/sicnarfleumas/" target="_blank">
+      <img src={linkedin} alt="LinkedIn Logo" height="30" width="auto"></a>
+  </div>
+</div>
+<div class="right">
+  <img src={hero} alt="Samuel Francis" width="220px" height="auto">
+</div>
+</div>
 
-					<script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
-				
-					</div>
-					&nbsp; &nbsp; &nbsp; For The Web!</h1>
-				<div id="herosocial">
-					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-					<a href="https://github.com/sicnarfleumas" target="_blank">
-						<img class="work" src={github} alt="Github Logo"></a> 
-					<a href="https://www.linkedin.com/in/sicnarfleumas/" target="_blank">
-						<img class="work" src={linkedin} alt="LinkedIn Logo"></a>
-				</div>
-			</div>
-			<div id="hero-right">
-				<img class="hero-img" src={hero} alt="Image of a person wearing a shirt" width="220" height="220">
-			</div>
-		</div>
-		<div id="certs">
-			<p>CERTIFIED</p>
-			<p>|</p>
-			<img src={coursera} alt="coursera logo" width="30rem" height="30rem">
-			<img src={google} alt="Google Logo" width="30rem" height="30rem">
-			<img src={facebook} alt="Meta Logo" width="30rem" height="30rem">
-		</div>
-	</div>
-	</body>
-</html>
+  </body>
 
-<style>
-
-body{
-	font-family: "Inter", sans-serif;
-	font-weight: 900;
-}
-.work{
-width: 1.5rem;
-height: 1.5rem;
-}
-
-#_certs {
-	width: 2rem;
-	height: 2rem;
-}
-	#container {
-		display: block;
-	}
-	#hero-main {
-		display: flex;
-		flex-direction: row;
-		align-content: center;
-		justify-content: center;
-		padding-top: 12.5rem;
-	}
-	#hero-left {
-		display: flex;
-		flex-direction: column;
-		align-content: center;
-		justify-content: center;
-	}
-	#hero-right {
-		display: flex;
-		flex-direction: column;
-		/* align-content: center;
-		justify-content: center; */
-		padding-left: 5rem;
-	}
-	h1 {
-		line-height: 2.5rem;
-		font-weight: 900;
-	}
-#certs{
-	display: flex;
-	flex-direction: row;
-	gap: 5rem;
-	justify-content: center;
-	margin-top: 5rem;
-	padding-left: 5%;
-	padding-right: 5%;
-
-	align-items: center;
-
-	font-weight: bold;
-	color: black;
-	font-size: 1rem;
-}
-.cursor {
-  color: transparent;
-}
-
-</style>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Inter", Arial, Helvetica, sans-serif;
+    }
+  
+    #hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      gap: 2rem;
+    }
+  
+    #hero p {
+      font-size: 2rem ;
+      font-weight: 900 !important;
+      line-height: 1rem;
+    }
+  
+    .cursor {
+      color: transparent;
+    }
+  
+    @media screen and (min-width: 768px) {
+      #hero {
+        flex-direction: row;
+      }
+      #hero p {
+        /* font-size: 3rem; */
+        line-height: 1.5rem;
+      }
+      .cursor {
+        color: transparent;
+      }
+    }
+  
+    @media screen and (min-width: 1024px) {
+      #hero {
+        gap: 7rem;
+      }
+      #hero p {
+        /* font-size: 4rem; */
+        line-height: 2rem;
+      }
+      .cursor {
+        color: transparent;
+      }
+    }
+  </style>
+  
