@@ -20,7 +20,7 @@ import hero from '../assets/hero.png'
 	</head>
   <body>
 <div id="hero">
-<div class="left">
+<div class="left unselectable">
   <p>&nbsp;&nbsp;Hello, I like to</p>
   <p>
     <span class="typer" id="main" data-words="DEVELOP, STRATEGIZE, DESIGN, IDEATE" data-delay="100" data-deleteDelay="1000" data-colors="#7F93FF,#9ACD32,#BA55D3, #FF6347"></span>
@@ -74,5 +74,14 @@ import hero from '../assets/hero.png'
         flex-direction: row;
       }
     }
+
+  .unselectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
   </style>
   
